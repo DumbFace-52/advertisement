@@ -1,109 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Some Coder" />
-    <meta name="description" content="Electrical bulb products and deals." />
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
-
-    <!-- Boxicons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Shared CSS -->
-    <link rel="stylesheet" href="../styles/style.css" type="text/css"/>
-
-    <title>Bulbs | Electrical Advert Website</title>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="author" content="Some Coder" />
+      <meta
+        name="description"
+        content="An advert website for bulbs selling electrical items."
+      />
+      <!-- Favicon -->
+      <link
+        rel="shortcut icon"
+        href="favicon/favicon.ico"
+        type="image/x-icon"
+      />
+      <!-- Boxicons -->
+      <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+      />
+      <!-- CSS Stylesheet -->
+      <link rel="stylesheet" href="../styles/style.css" type="text/css" />
+      <title>Bulb | Electrical Advert Website</title>
+    </head>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-              <a href="../index.html"><img src="../img/image.png" alt="Logo" /></a>
-            </div>
-            <ul class="nav-links">
-              <li><a href="../index.html">🏠 Home</a></li>
-              <li><a href="socket.html">🔌 Sockets</a></li>
-              <li><a href="products.html">🧰 Products</a></li>
-            </ul>
-            <div class="menu-icon">
-              <i class="bx bx-menu"></i>
-            </div>
-          </nav>
-          
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"><img src="../img/image.png" alt="Logo" /></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="socket.html">Sockets</a></li>
+          <li><a href="products.html">More Products</a></li>
+        </ul>
+        <div class="menu-icon">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
     </header>
 
-    <!-- Main -->
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+      <div class="hero-content">
+        <h1>Shine Bright with Our Premium Bulbs 💡</h1>
+        <p>Energy-saving | Affordable | Long-lasting</p>
+        <a href="products.html" class="cta-button">Shop Now</a>
+      </div>
+      <div class="hero-floating-icons">
+        <i class="bx bxs-bulb"></i>
+        <i class="bx bx-bolt-circle"></i>
+        <i class="bx bxs-star"></i>
+      </div>
+    </section>
+
     <main>
-      <section class="section section--bulbs">
-        <div class="container container--flex">
-          <!-- Image Column -->
-          <div class="section__media">
-            <div class="product-gallery">
-              <div class="product-card">
-                <img src="" alt="Bulb 1" />
-              </div>
-              <div class="product-card">
-                <img src="" alt="Bulb 2" />
-              </div>
-              <div class="product-card">
-                <img src="" alt="Bulb 3" />
-              </div>
-              <div class="product-card">
-                <img src="" alt="Bulb 4" />
-              </div>
-            </div>
+      <section class="page-section">
+        <!-- Image Column -->
+        <div class="image-gallery">
+          <div class="product-item">
+            <img src="images/ledbulb.jpg" alt="LED Bulb" />
           </div>
-
-          <!-- Text Column -->
-          <div class="section__content">
-            <h2 class="section__title">💡 Our Bulb Collection</h2>
-            <p class="section__description">
-              Discover high-quality and energy-efficient bulbs for every space —
-              home, office, or commercial use.
-            </p>
-
-            <div class="info-box">
-              <h3><i class="bx bxs-contact"></i> Contact Us</h3>
-              <p>
-                <i class="bx bxs-phone"></i> Call: <strong>0741658484</strong>
-              </p>
-              <p>
-                <i class="bx bxs-message-detail"></i> SMS:
-                <strong>0741658484</strong>
-              </p>
-              <p>
-                <i class="bx bxl-whatsapp"></i> WhatsApp:
-                <strong>0741658484</strong>
-              </p>
-            </div>
-
-            <div class="info-box">
-              <h3><i class="bx bxs-map"></i> Location</h3>
-              <p>
-                Along <strong>KATITO-HOMABAY ROAD</strong><br />
-                Opposite
-                <strong
-                  ><abbr title="KVTC"
-                    >Katito Vocational Training Centre</abbr
-                  ></strong
-                >
-              </p>
-            </div>
+          <div class="product-item">
+            <img src="images/ecobulb.jpg" alt="Eco Bulb" />
           </div>
+          <div class="product-item">
+            <img src="images/smartbulb.jpg" alt="Smart Bulb" />
+          </div>
+          <div class="product-item">
+            <img src="images/ledbulb.jpg" alt="LED Bulb" />
+          </div>
+          <div class="product-item">
+            <img src="images/ledbulbs.jpg" alt="LED Bulb" />
+          </div>
+        </div>
+
+        <!-- Text Column -->
+        <div class="content-box">
+          <h2 class="content-title">💡 Our Bulb Collection</h2>
+          <p class="content-text">
+            Discover high-quality and energy-efficient bulbs for every space —
+            home, office, or commercial use.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-box">
+          <h2><i class="bx bxs-contact"></i> Contact Us</h2>
+          <p>
+            <i class="bx bxs-phone"></i> Call: <strong>0741658484</strong><br />
+            <i class="bx bxs-message-detail"></i> SMS:
+            <strong>0741658484</strong><br />
+            <i class="bx bxl-whatsapp"></i> WhatsApp:
+            <strong>0741658484</strong>
+          </p>
+        </div>
+
+        <div class="location-box">
+          <h2><i class="bx bxs-map"></i> Location:</h2>
+          <p>
+            Along <strong>KATITO-HOMABAY ROAD</strong><br />
+            Opposite
+            <strong
+              ><abbr title="KVTC"
+                >Katito Vocational Training Centre</abbr
+              ></strong
+            >
+          </p>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer>
       <p>&copy; 2025 Electrical Advert Website. All Rights Reserved.</p>
     </footer>
+
+    <!-- External Script -->
+    <source src="../script/assets.js" type="" />
   </body>
 </html>
