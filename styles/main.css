@@ -72,8 +72,24 @@ body {
 }
 
 .logo img {
-  width: 120px;
+  width: 120px; /* or whatever size you want */
   height: auto;
+  animation: logoFade 1.2s ease-out forwards;
+  transform: scale(0.95);
+  opacity: 0;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 8px var(--accentColor));
+}
+
+@keyframes logoFade {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .nav-links {
@@ -105,7 +121,7 @@ body {
 }
 
 /* =======================================
-     || MAIN CONTENT (EXAMPLE STYLING)
+     || MAIN CONTENT 
      ======================================= */
 main {
   flex-grow: 1;
@@ -178,16 +194,9 @@ section {
   background-color: var(--btnHoverColor);
 }
 
-.hero-image {
-  max-width: 45%;
-  animation: fadeInRight 1s ease-out;
-}
-
 .hero-image img {
   width: 100%;
-  object-fit: cover;
   border-radius: 1.5rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Animations */
@@ -202,6 +211,25 @@ section {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 600px;
+  object-fit: cover;
+  height: auto;
+  border-radius: 1rem;
+  animation: heroZoomFade 1.5s ease-out forwards;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: scale(0.95) translateY(20px);
+}
+
+@keyframes heroZoomFade {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
   }
 }
 
@@ -293,6 +321,7 @@ section {
 .footer-contact p {
   margin: 0.5rem 0;
   font-size: 1rem;
+  font-weight: bold;
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -327,6 +356,7 @@ section {
 .copyright {
   margin-top: 1rem;
   font-size: 0.95rem;
+  font-weight: bold;
   color: var(--textColor);
   opacity: 0.8;
 }
