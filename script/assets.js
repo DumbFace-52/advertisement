@@ -1,9 +1,8 @@
-// Code goes here for burger menu on small devices
+// Select the menu icon and nav links
+const menuIcon = document.querySelector('.menu-icon');
+const navLinks = document.querySelector('.nav-links');
 
-  const menuIcon = document.querySelector('.menu-icon');
-  const navLinks = document.querySelector('.nav-links');
-
-  menuIcon.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
-
+// Toggle the 'active' class when the menu icon is clicked
+menuIcon.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
